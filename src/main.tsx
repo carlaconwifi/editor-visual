@@ -134,6 +134,7 @@ const App: React.FC = () => {
             <button key={r} className={"sp" + (rate === r ? " on" : "")} onClick={() => setRate(r)}>{r}x</button>
           ))}</div>
           <div className="now"><span className="tc">{tc(frame)}</span> {blockAt(frame)}</div>
+          <a className="credito" href="https://www.instagram.com/carlaconwifi" target="_blank" rel="noreferrer">Hecho por @carlaconwifi</a>
         </div>
       </main>
       <aside>

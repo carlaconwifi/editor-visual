@@ -2,6 +2,8 @@
 
 Una página local para revisar el corte de un video y dejar notas a quien lo edita.
 
+![El visor con el proyecto de ejemplo: reproductor, notas y línea de tiempo](docs/visor.png)
+
 - **Notas pegadas al segundo.** Pausas, escribes y la nota queda en ese momento del video. Puedes ponerle una categoría, adjuntar imágenes o videos de referencia (arrastrándolos o pegándolos con Cmd+V) y marcarla como hecha.
 - **Línea de tiempo.** Muestra la imagen, el b-roll, la voz, dos pistas de música y los efectos. Los clips de música se pueden mover, recortar, cortar, duplicar y borrar, y se les puede cambiar el volumen y los fundidos. Cada pista se puede silenciar.
 - **Todo se queda en tu computador.** Las notas y los cambios se guardan como archivos JSON dentro de la carpeta del proyecto.
@@ -91,3 +93,9 @@ Para música y efectos de sonido sin problemas de derechos de autor en YouTube, 
 El código de este repositorio es MIT (ver `LICENSE`). Depende de Remotion, que tiene su propia licencia: es gratis para personas y equipos pequeños, pero algunas empresas tienen que pagarla. Revisa https://www.remotion.dev/license antes de usarlo en una empresa.
 
 Usa solo música, tomas y efectos que tengas derecho a usar. Los del ejemplo los generó ffmpeg.
+
+## Hecho por Carla Con Wifi
+
+Soy **@carlaconwifi** en todas las redes: [YouTube](https://www.youtube.com/@carlaconwifi) · [Instagram](https://www.instagram.com/carlaconwifi) · [TikTok](https://www.tiktok.com/@carlaconwifi)
+
+Si el visor te sirve, sígueme. Y si subes algo que revisaste con él, etiquétame: me encanta ver qué hacen.
