@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Genera ejemplo/: un proyecto de prueba hecho solo con imágenes y sonidos sintéticos de ffmpeg
-(barras de color y tonos), así el visor se puede probar sin material propio ni licencias de nadie.
+(barras de color y tonos), así el editor se puede probar sin material propio ni licencias de nadie.
 
     python3 scripts/crear_ejemplo.py
 """

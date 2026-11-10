@@ -1,9 +1,9 @@
-// Servidor local del visor: empaqueta src/main.tsx (y lo vuelve a armar cuando algo cambia), sirve los
+// Servidor local del editor: empaqueta src/main.tsx (y lo vuelve a armar cuando algo cambia), sirve los
 // archivos del proyecto con peticiones por rangos para poder saltar en los videos, y guarda las notas,
 // los adjuntos y la edición de música dentro de la carpeta del proyecto.
 //
-//   npm run visor                 -> abre el proyecto de ejemplo (ejemplo/)
-//   npm run visor -- ruta/a/mi/proyecto
+//   npm run editor                 -> abre el proyecto de ejemplo (ejemplo/)
+//   npm run editor -- ruta/a/mi/proyecto
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -24,7 +24,7 @@ const PORT = Number(process.env.PORT || 3100);
 const OUT = path.join(HERE, "dist", `app-${PORT}.js`); // uno por puerto: se pueden abrir dos proyectos a la vez
 const HOST = process.env.HOST || "127.0.0.1"; // solo tu computador; usa HOST=0.0.0.0 para verlo desde otro equipo de tu red
 
-// Archivos opcionales del proyecto: si no existen, el visor arranca con uno vacío.
+// Archivos opcionales del proyecto: si no existen, el editor arranca con uno vacío.
 const EMPTY = {
   "edl/broll.json": { items: [], sfx: [] },
   "edl/music_edit.json": { tracks: { voice: 0, music: 0, sfx: 0 }, clips: [] },
@@ -134,6 +134,6 @@ http.createServer((req, res) => {
   if (!file.startsWith(PROJECT + path.sep)) { res.writeHead(403).end(); return; }
   sendFile(req, res, file);
 }).listen(PORT, HOST, () => {
-  console.log(`Visor listo en http://localhost:${PORT}  (proyecto: ${PROJECT})`);
+  console.log(`Editor visual listo en http://localhost:${PORT}  (proyecto: ${PROJECT})`);
   console.log("¿Necesitas música o efectos sin problemas de derechos? Epidemic Sound: https://conwi.fi/epidemicsound (enlace de afiliado)");
 });

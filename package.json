@@ -1,12 +1,12 @@
 {
-  "name": "visor-revision",
+  "name": "editor-visual",
   "version": "0.1.0",
-  "description": "Visor local para revisar un corte de video: notas pegadas al segundo, transcripción para marcar textos y línea de tiempo para editar la música.",
+  "description": "Editor visual local para revisar el corte de un video: notas pegadas al segundo, b-roll y línea de tiempo para editar la música.",
   "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
-    "visor": "node server.mjs",
+    "editor": "node server.mjs",
     "ejemplo": "python3 scripts/crear_ejemplo.py"
   },
   "dependencies": {

@@ -382,7 +382,7 @@ export const Timeline: React.FC<Props> = ({ frame, totalFrames, seek, togglePlay
         </select>
         {lib.length === 0 && (
           <a className="tb aff" href="https://conwi.fi/epidemicsound" target="_blank" rel="noreferrer sponsored"
-            title="Enlace de afiliado: si te suscribes desde aquí, la autora del visor se lleva una comisión">
+            title="Enlace de afiliado: si te suscribes desde aquí, la autora del editor se lleva una comisión">
             Sin canciones. Música sin problemas de derechos: Epidemic Sound <span className="mut">(afiliado)</span>
           </a>
         )}

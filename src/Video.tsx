@@ -4,14 +4,14 @@ import musicEdit from "proyecto/edl/music_edit.json";
 import { BITEMS, BItem, EDL, FPS, INTRO, SEGS, SFX, Seg } from "./datos";
 
 // Composición de Remotion que arma el corte a partir de edl/video.json: tramos de toma o voz en off,
-// b-roll encima, música en clips editables y efectos. Es la que reproduce el visor.
+// b-roll encima, música en clips editables y efectos. Es la que reproduce el editor.
 const INTRO_FRAMES = Math.round(INTRO * FPS);
 const XF = 3; // fundido de audio en cada corte, en cuadros, para que el ambiente no se caiga
 const at = (s: number) => INTRO_FRAMES + Math.round(s * FPS);
 export const VIDEO_FRAMES = at(EDL.total);
 const font = "system-ui, sans-serif";
 
-// Mutes por pista para el visor (escuchar voz, música o efectos por separado).
+// Mutes por pista para el editor (escuchar voz, música o efectos por separado).
 export type Mutes = { voice?: boolean; music?: boolean; sfx?: boolean };
 // Música como clips editables (se editan en la línea de tiempo y se guardan en edl/music_edit.json):
 // cada clip suena `dur` segundos de una canción de la biblioteca desde `from_s`, puesto en `t`

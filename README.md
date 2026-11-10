@@ -1,8 +1,8 @@
-# Visor de revisión
+# Editor visual
 
 Una página local para revisar el corte de un video y dejar notas a quien lo edita.
 
-![El visor con el proyecto de ejemplo: reproductor, notas y línea de tiempo](docs/visor.png)
+![El editor con el proyecto de ejemplo: reproductor, notas y línea de tiempo](docs/editor-visual.png)
 
 - **Notas pegadas al segundo.** Pausas, escribes y la nota queda en ese momento del video. Puedes ponerle una categoría, adjuntar imágenes o videos de referencia (arrastrándolos o pegándolos con Cmd+V) y marcarla como hecha.
 - **Línea de tiempo.** Muestra la imagen, el b-roll, la voz, dos pistas de música y los efectos. Los clips de música se pueden mover, recortar, cortar, duplicar y borrar, y se les puede cambiar el volumen y los fundidos. Cada pista se puede silenciar.
@@ -16,7 +16,7 @@ Necesitas [Node.js](https://nodejs.org) 18 o más reciente.
 
 ```bash
 npm install
-npm run visor
+npm run editor
 ```
 
 Abre http://localhost:3100. Verás un proyecto de ejemplo hecho con barras de color y tonos sintéticos. En el ejemplo solo suenan la música y un efecto en el segundo 10: la pista "Voz", que en un proyecto real lleva el sonido de cada toma, va en silencio porque ahí no habla nadie.
@@ -24,10 +24,10 @@ Abre http://localhost:3100. Verás un proyecto de ejemplo hecho con barras de co
 Para abrir tu propio proyecto:
 
 ```bash
-npm run visor -- ruta/a/mi/proyecto
+npm run editor -- ruta/a/mi/proyecto
 ```
 
-Puedes cambiar el puerto con `PORT=4000`. Por defecto el visor solo se ve desde tu computador; si quieres abrirlo desde otro equipo de tu red, arráncalo con `HOST=0.0.0.0`.
+Puedes cambiar el puerto con `PORT=4000`. Por defecto el editor solo se ve desde tu computador; si quieres abrirlo desde otro equipo de tu red, arráncalo con `HOST=0.0.0.0`.
 
 ## Formato del proyecto
 
@@ -35,13 +35,13 @@ Puedes cambiar el puerto con `PORT=4000`. Por defecto el visor solo se ve desde 
 mi-proyecto/
   edl/video.json          obligatorio: los tramos del corte
   edl/broll.json          opcional: b-roll y efectos de sonido
-  edl/music_edit.json     opcional: clips de música (el visor lo reescribe al editar)
+  edl/music_edit.json     opcional: clips de música (el editor lo reescribe al editar)
   audio/music/*.mp3       canciones disponibles
   audio/music/library.json
   media/...               tus tomas (las rutas van en los JSON)
 ```
 
-Al revisar, el visor crea `notas_revision.json` y `revision_adjuntos/` en esa misma carpeta.
+Al revisar, el editor crea `notas_revision.json` y `revision_adjuntos/` en esa misma carpeta.
 
 ### edl/video.json
 
@@ -98,4 +98,4 @@ Usa solo música, tomas y efectos que tengas derecho a usar. Los del ejemplo los
 
 Soy **@carlaconwifi** en todas las redes: [YouTube](https://www.youtube.com/@carlaconwifi) · [Instagram](https://www.instagram.com/carlaconwifi) · [TikTok](https://www.tiktok.com/@carlaconwifi)
 
-Si el visor te sirve, sígueme. Y si subes algo que revisaste con él, etiquétame: me encanta ver qué hacen.
+Si el editor te sirve, sígueme. Y si subes algo que revisaste con él, etiquétame: me encanta ver qué hacen.
