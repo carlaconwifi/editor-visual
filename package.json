@@ -1,0 +1,24 @@
+{
+  "name": "visor-revision",
+  "version": "0.1.0",
+  "description": "Visor local para revisar un corte de video: notas pegadas al segundo, transcripción para marcar textos y línea de tiempo para editar la música.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "visor": "node server.mjs",
+    "ejemplo": "python3 scripts/crear_ejemplo.py"
+  },
+  "dependencies": {
+    "@remotion/player": "4.0.290",
+    "remotion": "4.0.290",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.0",
+    "typescript": "5.6.3",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1"
+  }
+}

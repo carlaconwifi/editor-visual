@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "t": 10,
+   "dur": 4,
+   "src": "media/broll_1.mp4",
+   "a": 0,
+   "why": "Toma de apoyo de ejemplo"
+  }
+ ],
+ "sfx": [
+  {
+   "t": 10,
+   "file": "sfx/pop.wav",
+   "vol": 0.5
+  }
+ ]
+}

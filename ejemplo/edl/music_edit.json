@@ -1,0 +1,31 @@
+{
+ "tracks": {
+  "voice": 0,
+  "music": -6,
+  "sfx": 0
+ },
+ "clips": [
+  {
+   "id": "m1",
+   "track": "cancion_calma",
+   "lane": 0,
+   "t": 0,
+   "from_s": 0,
+   "dur": 16,
+   "gain_db": -18,
+   "fade_in": 1.5,
+   "fade_out": 1.5
+  },
+  {
+   "id": "m2",
+   "track": "cancion_alegre",
+   "lane": 0,
+   "t": 16,
+   "from_s": 4,
+   "dur": 16,
+   "gain_db": -18,
+   "fade_in": 1.5,
+   "fade_out": 2
+  }
+ ]
+}

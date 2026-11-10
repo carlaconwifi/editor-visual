@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.DS_Store
+# lo que cada quien escribe al revisar su propio proyecto
+ejemplo/notas_revision.json
+ejemplo/revision_adjuntos/

@@ -1,0 +1,43 @@
+{
+ "fps": 30,
+ "intro": 0,
+ "total": 32,
+ "segments": [
+  {
+   "block": "inicio",
+   "title": "Inicio",
+   "clip": "A01",
+   "kind": "A",
+   "src": "media/toma_a.mp4",
+   "a": 0,
+   "t": 0
+  },
+  {
+   "block": "inicio",
+   "title": "Inicio",
+   "clip": "A02",
+   "kind": "A",
+   "src": "media/toma_b.mp4",
+   "a": 2,
+   "t": 8
+  },
+  {
+   "block": "medio",
+   "title": "Voz en off",
+   "clip": "VO1",
+   "kind": "VO",
+   "src": "media/voz.m4a",
+   "a": 0,
+   "t": 16
+  },
+  {
+   "block": "cierre",
+   "title": "Cierre",
+   "clip": "A01",
+   "kind": "A",
+   "src": "media/toma_a.mp4",
+   "a": 12,
+   "t": 22
+  }
+ ]
+}
