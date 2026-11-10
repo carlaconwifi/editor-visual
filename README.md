@@ -1,27 +1,31 @@
 # Editor visual
 
-Una página local para revisar el corte de un video y dejar notas a quien lo edita.
+Lo armé porque estaba cansada de mandar feedback así: *"en el minuto 3 y pico, justo cuando digo no sé qué, ese corte…"* 🙃
+
+Aquí pausas el video, escribes la nota y queda pegada a ese segundo exacto. Con esto le he dado feedback a casi todos mis videos de YouTube (a mi editor, que en mi caso es Claude 🤖), y como me ha salvado la vida, te lo dejo gratis.
 
 ![El editor con el proyecto de ejemplo: reproductor, notas y línea de tiempo](docs/editor-visual.png)
 
-- **Notas pegadas al segundo.** Pausas, escribes y la nota queda en ese momento del video. Puedes ponerle una categoría, adjuntar imágenes o videos de referencia (arrastrándolos o pegándolos con Cmd+V) y marcarla como hecha.
-- **Línea de tiempo.** Muestra la imagen, el b-roll, la voz, dos pistas de música y los efectos. Los clips de música se pueden mover, recortar, cortar, duplicar y borrar, y se les puede cambiar el volumen y los fundidos. Cada pista se puede silenciar.
-- **Todo se queda en tu computador.** Las notas y los cambios se guardan como archivos JSON dentro de la carpeta del proyecto.
+## Qué hace
 
-El video se arma con [Remotion](https://www.remotion.dev) a partir de una lista de cortes en JSON, así que no hace falta exportar nada para revisarlo.
+- **Notas pegadas al segundo.** Pausas, escribes y listo. Le pones categoría, le pegas una captura o un video de referencia (arrastrándolo o con Cmd+V) y la tachas cuando ya está resuelta.
+- **Línea de tiempo.** Ves la imagen, el b-roll, la voz, dos pistas de música y los efectos. La música la puedes mover, recortar, cortar, duplicar, subirle o bajarle el volumen y ponerle fundidos sin abrir tu programa de edición.
+- **Todo se queda en tu computador.** Nada se sube a ningún lado: las notas y los cambios se guardan en archivos dentro de la carpeta de tu proyecto.
 
-## Probarlo
+Para que no haya sorpresas: no reemplaza a tu programa de edición. Es la parte de *revisar*: ves el corte armado, comentas y ajustas la música. Por dentro, el video se arma con [Remotion](https://www.remotion.dev) a partir de una lista de cortes, así que no tienes que exportar nada para verlo.
 
-Necesitas [Node.js](https://nodejs.org) 18 o más reciente.
+## Pruébalo
+
+Necesitas [Node.js](https://nodejs.org) 18 o más reciente. Después, en la terminal:
 
 ```bash
 npm install
 npm run editor
 ```
 
-Abre http://localhost:3100. Verás un proyecto de ejemplo hecho con barras de color y tonos sintéticos. En el ejemplo solo suenan la música y un efecto en el segundo 10: la pista "Voz", que en un proyecto real lleva el sonido de cada toma, va en silencio porque ahí no habla nadie.
+Abre http://localhost:3100 y vas a ver un video de ejemplo con barras de colores. No es arte, lo sé 😅: está hecho con material inventado para que puedas jugar sin poner nada tuyo. Solo suenan la música y un efecto en el segundo 10. La pista "Voz", que en un proyecto real lleva lo que dices en cada toma, va en silencio porque ahí no habla nadie.
 
-Para abrir tu propio proyecto:
+Cuando quieras abrir tu propio proyecto:
 
 ```bash
 npm run editor -- ruta/a/mi/proyecto
@@ -29,7 +33,9 @@ npm run editor -- ruta/a/mi/proyecto
 
 Puedes cambiar el puerto con `PORT=4000`. Por defecto el editor solo se ve desde tu computador; si quieres abrirlo desde otro equipo de tu red, arráncalo con `HOST=0.0.0.0`.
 
-## Formato del proyecto
+## Cómo organizar tu proyecto
+
+Esta es la parte técnica. El editor lee unos archivos sencillos que dicen qué toma va en qué segundo:
 
 ```
 mi-proyecto/
@@ -84,18 +90,18 @@ Para regenerar el ejemplo: `npm run ejemplo` (también necesita `ffmpeg`).
 
 ### ¿No tienes música?
 
-Para música y efectos de sonido sin problemas de derechos de autor en YouTube, yo uso Epidemic Sound: https://conwi.fi/epidemicsound
+Yo uso Epidemic Sound para la música y los efectos de mis videos, porque así YouTube no me reclama derechos de autor: https://conwi.fi/epidemicsound
 
-*Es un enlace de afiliado: si te suscribes desde ahí, me llevo una comisión y a ti no te cuesta más.*
+*Te soy transparente: es un enlace de afiliado. Si te suscribes desde ahí, me llevo una comisión y a ti no te cuesta nada más.*
 
 ## Licencias
 
 El código de este repositorio es MIT (ver `LICENSE`). Depende de Remotion, que tiene su propia licencia: es gratis para personas y equipos pequeños, pero algunas empresas tienen que pagarla. Revisa https://www.remotion.dev/license antes de usarlo en una empresa.
 
-Usa solo música, tomas y efectos que tengas derecho a usar. Los del ejemplo los generó ffmpeg.
+Y porfa, usa solo música, tomas y efectos que tengas derecho a usar. Los del ejemplo los generó ffmpeg, así que esos son de todos.
 
-## Hecho por Carla Con Wifi
+## Hecho con amor (y mucho wifi) por Carla
 
 Soy **@carlaconwifi** en todas las redes: [YouTube](https://www.youtube.com/@carlaconwifi) · [Instagram](https://www.instagram.com/carlaconwifi) · [TikTok](https://www.tiktok.com/@carlaconwifi)
 
-Si el editor te sirve, sígueme. Y si subes algo que revisaste con él, etiquétame: me encanta ver qué hacen.
+Si te sirvió, sígueme, que por allá cuento cómo trabajo y viajo. Y si subes un video que revisaste con esto, etiquétame: me hace demasiada ilusión ver lo que hacen 💛

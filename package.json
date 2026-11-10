@@ -1,7 +1,7 @@
 {
   "name": "editor-visual",
   "version": "0.1.0",
-  "description": "Editor visual local para revisar el corte de un video: notas pegadas al segundo, b-roll y línea de tiempo para editar la música.",
+  "description": "Pausas tu video, escribes la nota y queda pegada a ese segundo. La herramienta que uso para darle feedback a mis videos, gratis para ti.",
   "license": "MIT",
   "private": true,
   "type": "module",
