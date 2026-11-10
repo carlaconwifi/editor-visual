@@ -1,8 +1,8 @@
 # Editor visual
 
-Lo armé porque estaba cansada de mandar feedback así: *"en el minuto 3 y pico, justo cuando digo no sé qué, ese corte…"* 🙃
+Si has intentado editar con Claude Code creo que sabes lo fastidioso que es mandar feedback tipo: "en el minuto 3 y pico, justo cuando digo no sé qué, ese corte…" 🙃 jajaja así que decidí armar esta herramienta visual!
 
-Aquí pausas el video, escribes la nota y queda pegada a ese segundo exacto. Con esto le he dado feedback a casi todos mis videos de YouTube (a mi editor, que en mi caso es Claude 🤖), y como me ha salvado la vida, te lo dejo gratis.
+Aquí pausas el video, escribes la nota y queda pegada a ese segundo exacto. Con esto le he dado feedback a casi todos mis videos de YouTube (a mi editor, que en mi caso es Claude 🤖) y como me ha salvado la vida, te lo dejo gratis.
 
 ![El editor con el proyecto de ejemplo: reproductor, notas y línea de tiempo](docs/editor-visual.png)
 
